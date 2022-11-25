@@ -13,18 +13,18 @@ const tasks = [
     body:'shopping',
     title:
 'shit'  },
-  // {
-  //   _id: '5d2ca9e2e03d40b3232496aa7',
-  //   completed: true,
-  //   body:'auf',
-  //   title: 'Eu ea incididunt sunt consectetur fugiat non.',
-  // },
-  // {
-    // _id: '5d2ca9e29c8a94095564788e0',
-    // completed: false,
-    // body:'milk',
-    // title:'moo-moo'
-    // },
+  {
+    _id: '5d2ca9e2e03d40b3232496aa7',
+    completed: true,
+    body:'auf',
+    title: 'Eu ea incididunt sunt consectetur fugiat non.',
+  },
+  {
+    _id: '5d2ca9e29c8a94095564788e0',
+    completed: false,
+    body:'milk',
+    title:'moo-moo'
+    },
 
 ];
 
@@ -129,12 +129,6 @@ const tasks = [
   themeSelect.addEventListener('change', onThemeSelectHandler);
   listContainer.addEventListener('click',onCompleteHandler);
 
-
-
-
-
-
-
   function renderAllTasks(tasksList) {
     if (!tasksList) {
       console.error('Передайте список задач!');
@@ -192,9 +186,6 @@ const tasks = [
     completbtn.textContent = "complete task"
     completbtn.classList.add('btn','btn-success');
 
-    // let para = document.createElement("p");
-    // para.textContent = 'Add new task'
-    // para.classList.add('.invisible')
     let emptyTaskList = document.createElement('h1')
     emptyTaskList.textContent = "enter new task"
     emptyTaskList.classList.add('invivsible')
